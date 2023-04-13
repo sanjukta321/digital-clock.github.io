@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    
+</head>
+<body>
+  <span id="hrs"></span>:
+  
+  <span id="min"></span>:
+  
+  <span id="sec"></span>:
+  
+  <span id="milli"></span><br>
+  
+  <span id="day"></span>/
+  
+  <span id="month"></span>/
+  
+  <span id="year"></span>
+  
+
+
+
+
+
+
+
+    <!-- <div id="result"></div> -->
+
+
+
+
+
+
+    <script>
+      //  var name ="Hello world"
+       // console.log(name.length);
+     // var str1 = "first"
+     // var str2 ="second"
+     // console.log(str1 + str2)
+    // var str1 ="12"
+    // var str2 ="34"
+    // console.log( parseInt(str1) + parseInt(str2))
+   // search method
+   // var str = "hello from js"
+  // var result = str.search('js');
+  // console.log(result)
+
+    //slice method
+
+    // var str = "hello from js";
+
+     // var newStr = str.slice(0,4)
+     // console.log(newStr)
+     //replace method
+       // var str ="hello from js";
+        // var newStr = str. replace("from" , "FROM")    
+        // console.log(newStr)
+        //UPPER CASE lower case
+       // var str = "hello from js";
+         // console .log(str.toUpperCase())
+        // console.log(str.toLowerCase())
+        //trim
+      // var str ="         hello from js     ";
+      //console.log(str.trim())
+       //DATES
+      // console.log(Date())
+      var d = new Date();//creating the object of date
+
+    console.log(d.getHours())
+    console.log(d.getMinutes())
+    console.log(d.getSeconds())
+   
+    console.log(d.getMilliseconds())
+   
+    console.log(d.getDay())
+    console.log(d.getMonth())
+    console.log(d.getFullYear())
+    
+    const month = ['JAN','FEB','MAR','APR','MAY','JUNE','JULY','AUG','SEP','OCT','NOV','DEC']
+    const days =['SUN','MON','TUES','WED','THR','FRI','SAT']
+
+
+
+   document.getElementById('hrs').innerHTML= d.getHours()    
+    
+   document.getElementById('min').innerHTML= d.getMinutes()    
+    
+   document.getElementById('sec').innerHTML= d.getSeconds()    
+    
+   document.getElementById('milli').innerHTML= d.getMilliseconds()   
+    
+   document.getElementById('day').innerHTML=days[ d.getDay() ]   
+    
+   document.getElementById('month').innerHTML=month[ d.getMonth() ]  
+    
+   document.getElementById('year').innerHTML= d.getFullYear()    
+    
+   
+    
+    
+    
+
+   
+
+     
+     
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
